@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <h1 id="title">Website Survey Form</h1>
+        <p id="description">
+            <b>Note:</b> Please fill in the website information
+        </p>
+        
+        <form id="survey-form">
+            <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+            <label for="email" id="email-label">Email</label><input id="email" type="email" placeholder="Enter your Email" required></label>
+            <label for="number" id="number-label">Age<input id="number" type="number" placeholder="Enter your age" min="13" max="120"></label>
+
+            <label for="dropdown">Which country are you from?</label>
+                <select name="country selection" id="dropdown">
+                <option value="" selected>---Kies---</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="other">Other</option>
+                </select>
+        
+                <fieldset id="radio-button">
+                    <legend>Please select your gender:</legend>
+                    <label for="male">
+                      <input type="radio" id="male" name="gender" value="male"> Male
+                    </label>
+                    <label for="female">
+                      <input type="radio" id="female" name="gender" value="female"> Female
+                    </label>
+                    <label for="other">
+                      <input type="radio" id="other" name="gender" value="other"> Other
+                    </label>
+                  </fieldset>
+
+                <fieldset id="checkbox">
+                    <legend>Please select languages you have used</legend>
+                    <label> <input type="checkbox" name="language1" value="dutch"> Dutch </label>
+                    <label> <input type="checkbox" name="language2" value="german"> German </label>
+                    <label> <input type="checkbox" name="language3" value="french"> French </label>
+                    <label> <input type="checkbox" name="language4" value="other"> Other </label>
+                </fieldset>
+        
+                <textarea name="comments" id="comments" maxlength="500" rows="4" cols="50" placeholder="Enter comments..."></textarea>
+
+                <button type="submit" id="submit">Submit form</button>
+
+
+            </form>
+
+       
+
+
+    </body>
+
+</html>
